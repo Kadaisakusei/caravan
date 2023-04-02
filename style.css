@@ -4,11 +4,31 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+header, nav, h2, .main-visual, footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
 header {
   width: 90%;
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+}
+
+.social{
+  position: absolute;
+  top: 20px;
+  right: 22px;
+}
+
+.social i{
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .nav-list{
@@ -107,6 +127,19 @@ main {
 
 .sidebar {
   width: 230px;
+}
+
+.popular-text:last-child, .categories-text:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.instagram-box:nth-child(odd) {
+  margin: 0 10px 10px 0;
+}
+.instagram-box:nth-child(1) {
+  background-image: url(img/airport.jpg);
 }
 
 footer{
